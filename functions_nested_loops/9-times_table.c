@@ -1,12 +1,11 @@
 #include "main.h"
+
 /**
- * times_tables - Print tables.
- * 
+ * times_table - Print the 9 times tables.
  *
- * Description: Print tables.
+ * Description: Uses _putchar to print a formatted 9x table from 0 to 9.
  * Return: void.
  */
-
 void times_table(void)
 {
 	int l;
