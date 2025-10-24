@@ -9,7 +9,7 @@
 int main(void)
 {
 	write(2, "and that piece of art", strlen("and that piece of art"));
-	write(2, "is useful\" - Dora Korpar", strlen("is useful\" - Dora Korpar"));
+	write(2, " is useful\" - Dora Korpar", strlen(" is useful\" - Dora Korpar"));
 	write(2, ", 2015-10-19", strlen(", 2015-10-19"));
 
 	return (1);
