@@ -5,7 +5,7 @@
  * @src: the source string.
  * @n: the number of character to copies.
  *
- * Description: to copy a string like strncpy.
+ * Description: to copy a string into dest string.
  * Return: dest.
  */
 
