@@ -1,0 +1,35 @@
+#include "main.h"
+/**
+ * *cap_string - to capitalizes the first letter of a word.
+ * @s: The string to check.
+ *
+ * Description: to capitalize the first letter of a word.
+ * Return: a char (string).
+ */
+
+char *cap_string(char *s)
+{
+	int i = 0;
+	int j;
+
+	char *tab = " \t\n,;.!?\"(){}";
+	
+	if (s[0] >= 'a' && s[0] <= 'z')
+		s[i + 1] -= 32;
+
+	while (s[i] != '\0')
+	{
+		for (j = 0; tab[j] != '\0'; j++)
+		{
+			if (s[i] == tab[j])
+			{ 
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+						s[i + 1] -= 32;
+			} 
+
+		}
+		i++;
+	}
+
+	return (s);
+}
