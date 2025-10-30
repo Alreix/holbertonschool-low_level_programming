@@ -13,7 +13,7 @@ char *cap_string(char *s)
 	int j;
 
 	char *tab = " \t\n,;.!?\"(){}";
-	
+
 	if (s[0] >= 'a' && s[0] <= 'z')
 		s[0] -= 32;
 
@@ -22,11 +22,10 @@ char *cap_string(char *s)
 		for (j = 0; tab[j] != '\0'; j++)
 		{
 			if (s[i] == tab[j])
-			{ 
+			{
 				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
-						s[i + 1] -= 32;
-			} 
-
+					s[i + 1] -= 32;
+			}
 		}
 		i++;
 	}
