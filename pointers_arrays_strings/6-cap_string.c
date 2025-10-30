@@ -15,7 +15,7 @@ char *cap_string(char *s)
 	char *tab = " \t\n,;.!?\"(){}";
 	
 	if (s[0] >= 'a' && s[0] <= 'z')
-		s[i + 1] -= 32;
+		s[0] -= 32;
 
 	while (s[i] != '\0')
 	{
