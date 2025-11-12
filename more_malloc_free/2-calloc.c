@@ -15,16 +15,19 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
 	int i;
-	char element = size * nmemb;
+	int total = size * nmemb;
 
 	if (size == 0 || nmemb == 0)
+		return (NULL);
+
+	if (nmemb != 0 && (total / nmemb) != size)
 		return (NULL);
 
 	p = malloc(size * nmemb);
 		if (p == NULL)
 			return (NULL);
 
-	for (i = 0; i < element; i++)
+	for (i = 0; i < total; i++)
 		p[i] = 0;
 
 	return (p);
