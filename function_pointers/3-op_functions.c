@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -73,4 +73,3 @@ int op_mod(int a, int b)
 
 	return (a % b);
 }
-
