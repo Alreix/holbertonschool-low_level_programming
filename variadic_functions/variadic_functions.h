@@ -1,9 +1,9 @@
-#ifndef VARIADIC_FUNCTIONS
-#define VARIADIC_FUNCTIONS
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
 
 /**
- * struct printer - Struct for type and function
+ * struct printall - Struct for type and function
  * @sym: Format symbol.
  * @print: Function to print this type.
  */
@@ -12,7 +12,7 @@ typedef struct printall
 	char sym;
 	void (*print)(va_list ap);
 
-}printer_t;
+} printer_t;
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
