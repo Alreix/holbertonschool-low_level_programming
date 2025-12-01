@@ -29,6 +29,9 @@ By the end of this project, you should be able to:
 | `3-add_node_end.c` | `list_t *add_node_end(list_t **head, const char *str)` | Adds a new node at the end of the list and returns the address of the new element. |
 | `4-free_list.c` | `void free_list(list_t *head)` | Frees a `list_t` list, including all duplicated strings and allocated nodes. |
 
+## Compilation
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o list
+
 ---
 
 ##  Data Structure Used
@@ -47,15 +50,3 @@ typedef struct list_s
     struct list_s *next;
 } list_t;
 
-## Compilation
-
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o list
-
-```c
----
-
-## Tools Used
-
-C programming language
-gcc compiler
-Valgrind for memory leak analysis
