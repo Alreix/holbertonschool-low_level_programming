@@ -51,6 +51,9 @@ typedef struct list_s
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o list
 
+```c
+---
+
 ## Tools Used
 
 C programming language
